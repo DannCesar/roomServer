@@ -1,8 +1,36 @@
 #Get rooms
 @baseUrl = http://localhost:3334
+@roomId = 6f05315b-1442-4bfa-af46-cf39d951f59e
 
 #Health check
 GET {{baseUrl}}/health
 
 ###
 GET {{baseUrl}}/rooms
+
+###
+#Create room
+
+POST {{baseUrl}}/rooms
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "Sala",
+    "description": "Sala de teste"
+}
+
+###
+#Get room questions
+
+GET {{baseUrl}}/rooms/{{roomId}}/questions
+
+###
+#Create question
+POST  {{baseUrl}}/rooms/{{roomId}}/questions
+Content-Type: application/json
+
+{
+    "question": "Qual é a situação?"
+    
+}

@@ -22,6 +22,13 @@
       "when": 1752082196556,
       "tag": "0002_rapid_black_panther",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1752323273275,
+      "tag": "0003_clumsy_black_bolt",
+      "breakpoints": true
     }
   ]
 }
